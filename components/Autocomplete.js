@@ -12,6 +12,10 @@ class Autocomplete extends React.Component {
     super(props);
     this.state = {
     };
+
+    componentDidMount() {
+      resultsStore.addListener(this.listener);
+    }
   }
   render() {
     return (
